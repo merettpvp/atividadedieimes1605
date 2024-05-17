@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinco lugares que eu gostaria de conhecer</title>
+</head>
+<body>
+    <div id="destino1">
+        <h2>Paris, França</h2>
+        <img src="paris.jpg" alt="Paris, França">
+        <p>Paris, a capital da França, é uma importante cidade europeia e um centro mundial de arte, moda, gastronomia e cultura.</p>
+    </div>
+
+    <div id="destino2">
+        <h2>Tóquio, Japão</h2>
+        <img src="toquio.jpg" alt="Tóquio, Japão">
+        <p>Tóquio, a movimentada capital do Japão, combina o estilo ultramoderno com o tradicional, desde arranha-céus iluminados por neon a templos históricos.</p>
+    </div>
+
+    <div id="destino3">
+        <h2>Barcelona, Espanha</h2>
+        <img src="barcelona.jpg" alt="Barcelona, Espanha">
+        <p>Barcelona, capital cosmopolita da região da Catalunha na Espanha, é conhecida pela sua arte e arquitetura. A fantástica igreja da Sagrada Família e outros monumentos modernistas.</p>
+    </div>
+
+    <div id="destino4">
+        <h2>Rio de Janeiro, Brasil</h2>
+        <img src="rio.jpg" alt="Rio de Janeiro, Brasil">
+        <p>O Rio de Janeiro é uma grande cidade brasileira à beira-mar, famosa pelas praias de Copacabana e Ipanema, pela estátua de 38 metros de altura do Cristo Redentor.</p>
+    </div>
+
+    <div id="destino5">
+        <h2>Roma, Itália</h2>
+        <img src="roma.jpg" alt="Roma, Itália">
+        <p>Roma, a capital da Itália, é uma cidade cosmopolita, enorme, com quase 3.000 anos de arte, arquitetura e cultura influentes no mundo todo e à mostra.</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var imagens = document.querySelectorAll("img");
+            imagens.forEach(function(imagem) {
+                console.log(imagem.src);
+            });
+
+            var paragrafoEscolhido = document.getElementById("destino3").querySelector("p");
+            paragrafoEscolhido.textContent += " Barcelona é um lugar incrível para explorar!";
+        });
+    </script>
+</body>
+</html>
